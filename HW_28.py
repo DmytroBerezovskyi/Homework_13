@@ -6,7 +6,10 @@ while True:
     else:
         base = int(input('Введите систему исчисления (2-36): '))
 newNum = ''
-if base != 12 or base != 16 or base!=32:
+
+if base == 12 or base == 16 or base == 32:
+    pass
+else:
     while num > 0:
         newNum = str(num % base) + newNum
         num //= base
